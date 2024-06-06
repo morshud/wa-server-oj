@@ -6,7 +6,7 @@
   "author": "kingaspx",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "rimraf src/dist && babel src -s -d src/dist",
+    "build": "rimraf dist && babel src -s -d dist",
     "changelog:last": "conventional-changelog -p angular -r 2",
     "changelog:preview": "conventional-changelog -p angular -u",
     "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s",
