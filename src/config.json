@@ -1,0 +1,93 @@
+{
+  "secretKey": "8KtworSulXYbbXKej0e9SjlcT3Y3UAeZsLx42Jx1CByXw4Fose",
+  "host": "http://127.0.0.1",
+  "port": "21465",
+  "deviceName": "Chrome",
+  "poweredBy": "Chrome",
+  "startAllSession": true,
+  "tokenStoreType": "file",
+  "maxListeners": 15,
+  "customUserDataDir": "./userDataDir/",
+  "webhook": {
+    "url": null,
+    "autoDownload": true,
+    "uploadS3": false,
+    "readMessage": false,
+    "allUnreadOnStart": false,
+    "listenAcks": true,
+    "onPresenceChanged": false,
+    "onParticipantsChanged": false,
+    "onReactionMessage": false,
+    "onPollResponse": false,
+    "onRevokedMessage": true
+  },
+  "archive": {
+    "enable": false,
+    "waitTime": 10,
+    "daysToArchive": 45
+  },
+  "log": {
+    "level": "error",
+    "logger": ["console", "file"]
+  },
+  "createOptions": {
+    "browserArgs": [
+      "--log-level=3",
+      "--disable-background-networking",
+      "--disable-background-timer-throttling",
+      "--disable-breakpad",
+      "--disable-client-side-phishing-detection",
+      "--disable-default-apps",
+      "--disable-dev-shm-usage",
+      "--disable-hang-monitor",
+      "--disable-popup-blocking",
+      "--disable-prompt-on-repost",
+      "--no-default-browser-check",
+      "--disable-site-isolation-trials",
+      "--no-experiments",
+      "--ignore-gpu-blacklist",
+      "--ignore-certificate-errors",
+      "--ignore-certificate-errors-spki-list",
+      "--disable-gpu",
+      "--disable-extensions",
+      "--enable-features=NetworkService",
+      "--no-sandbox",
+      "--no-zygote",
+      "--disable-setuid-sandbox",
+      "--single-process",
+      "--disable-webgl",
+      "--disable-threaded-animation",
+      "--disable-threaded-scrolling",
+      "--disable-in-process-stack-traces",
+      "--disable-histogram-customizer",
+      "--disable-gl-extensions",
+      "--disable-composited-antialiasing",
+      "--disable-canvas-aa",
+      "--disable-3d-apis",
+      "--disable-accelerated-2d-canvas",
+      "--disable-accelerated-jpeg-decoding",
+      "--disable-accelerated-mjpeg-decode",
+      "--disable-app-list-dismiss-on-blur",
+      "--disable-accelerated-video-decode"
+    ]
+  },
+  "mapper": {
+    "enable": false,
+    "prefix": "tagone-"
+  },
+  "db": {
+    "mongodbDatabase": "tokens",
+    "mongodbCollection": "",
+    "mongodbUser": "",
+    "mongodbPassword": "",
+    "mongodbHost": "",
+    "mongoIsRemote": true,
+    "mongoURLRemote": "",
+    "mongodbPort": 27017,
+    "redisHost": "localhost",
+    "redisPort": 6379,
+    "redisPassword": "",
+    "redisDb": 0,
+    "redisPrefix": "docker"
+  }
+}
